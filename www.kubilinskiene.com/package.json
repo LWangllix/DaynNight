@@ -1,0 +1,16 @@
+{
+  "name": "pirmaspraktinis_lukas_vanglikas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "scss-watch": "node-sass --watch scss -o css",
+"scss-build": "node-sass scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.1",
+    "node-sass": "^5.0.0"
+  }
+}

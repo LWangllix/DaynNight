@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+  href="css/lightstyles.css" id="mode">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body id="viskas">
+  <div id="headerMain">
+    <header>
+      <nav class="navbar"> 
+        <div class="navbar-brand is-size-1-widescreen is-size-2-desktop is-size-4-tablet has-text-weight-bold ">
+            <a class="navbar-item" href="index.html">VINTECHAS</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+      </div> 
+        <ul class="navbar-menu navbar-end">
+            <a class="navbar-item is-size-4-widescreen is-size-4-desktop is-size-5-tablet" href="index.html">Pagrindinis</a>
+            <a class="navbar-item is-size-4-widescreen is-size-4-desktop is-size-5-tablet" href="prekes.html">Prekės</a>
+            <a class="navbar-item is-size-4-widescreen is-size-4-desktop is-size-5-tablet" href="Uzsakymas.html">Užsisakyti</a>
+            <a class="navbar-item is-size-4-widescreen is-size-4-desktop is-size-5-tablet" href="apie.html">Apie Mus</a>
+            <a class="navbar-item is-size-4-widescreen is-size-4-desktop is-size-5-tablet" href="galerija.html">Galerija</a>
+            <a class="navbar-item is-size-4-widescreen is-size-4-desktop is-size-5-tablet" href="nustatymai.html">Nustatymai</a>
+            <a class="navbar-item is-size-4-widescreen is-size-4-desktop is-size-5-tablet" href="zaidimas.html">Zaidimas</a>
+            </ul>      
+    </nav>
+    </header>
+    <main>
+      <div class="columns reverse-columns  is-multiline ">
+      <div class="column is-8-desktop  is-12-tablet" >
+      <div class="section">
+        <div class="container">
+  
+  
+        <div class="box" style="box-shadow: none;">
+    <h2 class="title   "> Prekes užsakymas</h2>
+    <hr class="horiz">
+    <p class="subtitle is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-size-6-mobile ">Norint užsisakyti prekę turite užpildyti visus laukelius su galiojančia informacija
+     Detales sakantis internetu atsiunčiame į jūsų parašyta adresą per 2-5 dienas</p>
+    
+   
+     
+    <form action="file:///C:/Users/bater/Desktop/pirmasPraktinis%20Lukas%20Vanglikas/Uzsakymas.html" method="POST" onsubmit="return tvirtinam()">
+      <div class="field  is-horizontal ">
+        <div class="field-label is-normal-is-desktop">   
+      <label class="label is-normal-is-desktop is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-size-6-mobile " for="vardas" >Vardas: </label>
+        </div>
+    <div class="field-body is-normal-is-desktop ">
+      <input class="input" type="text" placeholder="vardas" name="vardas" required="required" id="vard" pattern="^[A-Z]{1}[a-z]{2,15}" title="Parasykite teisinga savo varda">
+    </div>
+</div>
+<div class="field  is-horizontal ">
+    <div class="field-label is-normal-is-desktop">
+      <label class="label is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-size-6-mobile" for="pavarde"  >Pavarde: </label>
+      </div>
+      <div class="field-body is-normal-is-desktop ">
+      <input class="input" type="text" placeholder="pavarde" name="pavarde"  required="required" id="pvard" pattern="^[A-Z]{1}[a-z]{2,15}" title="Parasykite teisinga savo pavarde">
+      </div>
+    </div>
+    
+    <div class="field  is-horizontal ">
+    <div class="field-label is-normal-is-desktop">
+      <label class="label is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-size-6-mobile" for="Numeris">Numeris: </label>
+    </div>
+    <div class="field-body is-normal-is-desktop">
+      <input class="input" type="tel" placeholder="Numeris" name="Numeris" id="nr"  required="required"  pattern="\+370[0-9]{8}" title="iveskite numeri formatu +37066666666">
+      
+    </div>
+  </div>
+    <div class="field  is-horizontal ">
+    <div class="field-label is-normal-is-desktop">
+      <label class="label is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-size-6-mobile" for="elPastas" >el-paštas: </label>
+    </div>
+    <div class="field-body is-normal-is-desktop">
+      <input class="input" type="email" placeholder="elPastas" name="elPastas" id="ep"  required="required"  pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b">
+    </div>
+  </div>
+    <div class="field  is-horizontal ">
+      <div class="field-label is-normal-is-desktop">
+      <label class="label is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-size-6-mobile" for="adresas" >Adresas: </label>
+      </div>
+      <div class="field-body is-normal-is-desktop">
+      <input class="input" type="text" placeholder="Adresas" name="adresas" id="ad" required="required"  pattern="^[A-Z]{1}[a-z]{2,15} g\. \d{1,3} , [A-Z]{1}[a-z]{2,15}$" title="Įveskite adresa formatu Verkiu g. 46 , Vilnius"> 
+      </div>
+    </div>
+      <div class="field  is-horizontal ">
+      <div class="field-label is-normal-is-desktop">
+      <label class="label is-size-5-widescreen is-size-6-desktop is-size-6-tablet is-size-6-mobile" for="Dalys" >Dalių kodai, kuriuos norite užsisakyti(iveskite kodukus dalių) arba palikite komentara kokiu detaliu ieškote: </label>
+      </div>
+      <div class="field-body is-normal-is-desktop">
+      <textarea class="textarea is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-size-6-mobile" name="" id="dalys" cols="50" rows="4" placeholder="pvz: 1457ec"  required="required"></textarea>
+      </div>
+    </div>
+      
+      <div class="has-text-centered">
+        <input class="button button is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-primary mt-2" type="submit" value="Siusti"> 
+        
+      </div>
+      
+      
+    
+  
+    </form>
+  </div>
+      
+    </div>
+  </div>
+      </div> 
+
+      <div class="column is-3-desktop  is-12-tablet " >
+        
+        <div class="section">
+          <div class="columns is-multiline">
+          <div class="column is-12-desktop  is-4-tablet  ">
+         <div class="menu mb-5 visosdalys   " >
+           
+           <p class="menu-label is-size-3-widescreen is-size-4-desktop is-size-4-tablet">Atsarginės Dalys</p>
+                 <ul class="menu-list">
+                   <li><a class="is-size-4-widescreen is-size-5-desktop is-size-6-tablet" href="#">Skalbimo mašinų dalys</a></li>
+                   <li><a class="is-size-4-widescreen is-size-5-desktop is-size-6-tablet" href="#">Indaplovių dalys</a></li>
+                   <li><a class="is-size-4-widescreen is-size-5-desktop is-size-6-tablet" href="#">Šaldytuvų dalys</a></li>
+                   <li><a class="is-size-4-widescreen is-size-5-desktop is-size-6-tablet" id="last" href="#">Orkaičių dalys</a></li>
+                 </ul>
+               
+               </div>
+              </div>
+              <div class="column  is-12-desktop  is-4-tablet">
+           <div class="message  mb-5 " >
+             <div class="message-header" style="justify-content: center;">
+              
+             <p class="is-size-4-widescreen is-size-5-desktop is-size-6-tablet">UŽSISAKYK MEISTRĄ Į NAMUS</p>
+          
+           </div>
+           <div class="message-body has-text-centered ">
+             <a href="meistras.html" style="text-decoration: none;"><Button class="button is-size-4-widescreen is-size-5-desktop is-size-6-tablet is-primary ">UŽSAKYTI</Button></a>
+           </div>
+            </div>
+          </div>
+            
+       
+            <div class="column  is-12-desktop  is-4-tablet">
+            <div class="message  mb-5 ">
+             <div class="message-header" style="justify-content: center;  ">
+             <p class="is-size-4-widescreen is-size-5-desktop is-size-6-tablet">PARTNERIAI</p>
+             </div>
+             <div class="message-body has-text-centered" style="padding:0%;">
+                <ul>
+                 <li> <a href="http://www.saltukas.lt/"><img src="pictures/logo.png"  alt="" ></a></li>
+                 <li><a href="https://www.vajulitas.lt/"><img src="pictures/vajulitas_logo.png"  alt="" ></a></li> 
+                 <li> <a href="https://www.lemona.lt/"><img src="pictures/lemona_logo.png"  alt="" ></a></li> 
+             </ul>
+             </div>
+           </div>
+          </div>
+                  
+           
+         
+      
+       </div>
+      </div>
+      </div>
+    </div>
+      
+      </main>
+    </div>
+    <footer class="footer has-text-centered  is-size-3-widescreen is-size-4-desktop is-size-5-tablet is-size-5-mobile">
+      2020m.
+    </footer>
+  
+  
+    
+    
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+</html>
+<!--
+      
+      <div class="field-label is-normal-is-desktop">
+      <label class="label" for="Numeris">Numeris: </label>
+    </div>
+    <div class="field-body is-normal-is-desktop">
+      <input class="input" type="tel" placeholder="Numeris" name="Numeris"  required="required">
+      
+    </div>
+    <div class="field-label is-normal-is-desktop">
+      <label class="label" for="elPastas">el-paštas: </label>
+    </div>
+    <div class="field-body is-normal-is-desktop">
+      <input class="input" type="email" placeholder="elPastas" name="elPastas"  required="required">
+    </div>
+     
+      <div class="field-label is-normal-is-desktop">
+      <label class="label" for="adresas">Adresas: </label>
+      </div>
+      <div class="field-body is-normal-is-desktop">
+      <input class="input" type="text" placeholder="Adresas" name="adresas"  required="required">
+      
+      </div>
+      <div class="field-label is-normal-is-desktop">
+      <label class="label" for="Dalys">Dalių kodai, kuriuos norite užsisakyti(iveskite kodukus dalių): </label>
+      </div>
+      <div class="field-body is-normal-is-desktop">
+      <textarea class="textarea" name="" id="" cols="50" rows="4" placeholder="pvz: 1457ec"  required="required"></textarea>
+      </div>
+      <div class="has-text-centered">
+      <button class="button mt-2" >Siusti</button>
+    </div>-->

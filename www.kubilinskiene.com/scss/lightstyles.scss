@@ -1,0 +1,77 @@
+@charset "utf-8";
+$navbar-breakpoint:1040px + (2 * 32px);
+@media( max-width: 2167px) { 
+    .reverse-columns {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        
+    }
+  }
+ 
+  
+
+  .message-body li{
+    padding: 2.25em 1.5em;
+}
+
+.message-body li:hover{
+    background-color: rgb(155, 155, 155); 
+ 
+}
+
+.pictureBack {
+    background-image: url("../pictures/120216835_3258459747610046_5098688303200717183_n.png") ;
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 60px - 78.67px) ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.taisykle{
+    height: 100px;
+    width: 100px;
+    animation: spin 3s infinite linear;
+}
+
+
+
+
+.overLay{
+    background-color: rgba(0, 0, 0, 0.428);
+    
+}
+
+ 
+
+@keyframes spin {
+    from {
+     transform: rotate(0turn)
+    
+    }
+    to {transform: rotate(1turn)
+        
+       }
+       }
+       
+
+
+
+.visosdalys{
+    background: linear-gradient(rgb(255, 255, 255), rgb(196, 190, 190));
+    border-top-right-radius: 10%;
+    
+}
+.tt{
+   background:  linear-gradient(-45deg, transparent 30px, rgb(255, 255, 255) 0) !important;
+   filter: drop-shadow(2px 2px 10px rgba(0,0,0,.5));
+
+}
+
+
+
+@import "../node_modules/bulma/bulma.sass";
+
